@@ -28,6 +28,8 @@
     "prettier": "prettier --write ./src",
     "lint": "eslint src -c .eslintrc.js --ext js,jsx",
     "lint:fix": "eslint ./src --fix --ext .js,.jsx,.tsx,.ts --color",
+    "stylelint": "stylelint ./src/*{.css,.scss}",
+    "stylelint:fix": "stylelint ./src/*{.css,.scss} --fix",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -35,6 +37,9 @@
       "yarn prettier",
       "yarn lint:fix",
       "git add ."
+    ],
+    "*.(css|scss)": [
+      "yarn stylelint:fix"
     ],
     "*.{md,json}": [
       "yarn prettier"
@@ -154,8 +159,17 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.4.1",
+    "postcss-scss": "^4.0.4",
     "prettier": "^2.6.2",
     "standard-version": "^9.3.2",
+    "stylelint": "^14.8.2",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.2.0",
     "typescript-eslint": "^0.0.1-alpha.0"
   }
 }

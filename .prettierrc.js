@@ -8,4 +8,5 @@ module.exports = {
   bracketSameLine: false,
   bracketSpacing: true,
   useTabs: false,
+  endOfLine: 'auto',
 };
