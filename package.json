@@ -1,6 +1,6 @@
 {
   "name": "template-01",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -10,7 +10,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "cz-emoji": "^1.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -23,13 +23,87 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "commit": "cz"
+    "commit": "cz",
+    "release": "standard-version"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog",
+      "maxHeaderWidth": 100,
+      "maxLineWidth": 100,
+      "types": {
+        "feat": {
+          "description": "A new feature",
+          "title": "Features"
+        },
+        "style": {
+          "description": "Improving structure / format ot the code",
+          "title": "Style"
+        },
+        "fix": {
+          "description": "A bug fix",
+          "title": "Fix"
+        },
+        "quickfix": {
+          "description": "A critical hotfix",
+          "title": "Quickfix"
+        },
+        "review": {
+          "description": "Updating code due to code review changes",
+          "title": "Review"
+        },
+        "refactor": {
+          "description": "A code change that neither fixes a bug nor adds a feature",
+          "title": "Refactor"
+        },
+        "config": {
+          "description": "Changing configuration files",
+          "title": "Config"
+        },
+        "perf": {
+          "description": "A code change that improves performance",
+          "title": "Performance"
+        },
+        "merge": {
+          "description": "Merging branches",
+          "title": "Merge"
+        },
+        "docs": {
+          "description": "Documentation only changes",
+          "title": "Documentation"
+        },
+        "deploy": {
+          "description": "Deploying stuff",
+          "title": "Deploy"
+        },
+        "prune ": {
+          "description": "Removing code or files",
+          "title": "Prune"
+        },
+        "test": {
+          "description": "Adding missing test or correcting test",
+          "title": "Test"
+        },
+        "revent": {
+          "description": "Revets a previous commit",
+          "title": "Revent"
+        },
+        "ci": {
+          "description": "Changes to our CI configuration files and scripts",
+          "title": "CI"
+        },
+        "chore": {
+          "description": "Other changes that don't modify src or test files",
+          "title": "Chore"
+        }
+      }
+    }
   },
   "browserslist": {
     "production": [
@@ -42,5 +116,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "standard-version": "^9.3.2"
   }
 }
