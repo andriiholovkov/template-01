@@ -27,7 +27,23 @@
     "commit": "cz",
     "prettier": "prettier --write ./src",
     "lint": "eslint src -c .eslintrc.js --ext js,jsx",
-    "lint:fix": "eslint ./src --fix --ext .js,.jsx,.tsx,.ts --color"
+    "lint:fix": "eslint ./src --fix --ext .js,.jsx,.tsx,.ts --color",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "yarn lint:fix",
+      "yarn prettier",
+      "git add"
+    ],
+    "*.{md,json}": [
+      "yarn prettier"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -136,6 +152,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "standard-version": "^9.3.2",
     "typescript-eslint": "^0.0.1-alpha.0"
