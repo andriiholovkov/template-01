@@ -34,7 +34,7 @@
     "*.{ts,tsx,js,jsx}": [
       "yarn lint:fix",
       "yarn prettier",
-      "git add"
+      "git add ."
     ],
     "*.{md,json}": [
       "yarn prettier"
