@@ -1,0 +1,28 @@
+@import '../variables';
+
+@mixin font-size($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-style($font-family: $ff-light, $font-weight) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-style: normal;
+}
+
+//@mixin container($size: 'lg') {
+//  width: $width-md;
+//  max-width: $max-width-lg;
+//  margin-right: auto;
+//  margin-left: auto;
+//
+//  @if ($size=='sm') {
+//    width: $max-width-sm;
+//    max-width: $max-width-sm;
+//  }
+//  @else if ($size=='md') {
+//    width: $max-width-md;
+//    max-width: $max-width-md;
+//  }
+//}

@@ -1,3 +1,17 @@
+@forward 'assets/styles/variables';
+@forward 'assets/styles/font-face';
+@forward 'assets/styles/mixins';
+@forward 'assets/styles/utilities';
+@forward 'assets/styles/reset';
+@forward 'assets/styles/container';
+
+@use 'assets/styles/variables';
+@use 'assets/styles/font-face';
+@use 'assets/styles/mixins';
+@use 'assets/styles/utilities';
+@use 'assets/styles/reset';
+@use 'assets/styles/container';
+
 body {
   margin: 0;
   font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', sans-serif;
@@ -8,11 +22,4 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, 'Courier·New', Consolas, monospace;
-}
-
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
 }

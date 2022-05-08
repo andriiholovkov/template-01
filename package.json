@@ -117,7 +117,7 @@
           "title": "Test"
         },
         "revent": {
-          "description": "Revets a previous commit",
+          "description": "Revers a previous commit",
           "title": "Revent"
         },
         "ci": {

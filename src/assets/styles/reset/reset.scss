@@ -1,11 +1,10 @@
-@charset "UTF-8";
-/* Breakpoints */
 /**
  * styles/utilities/_reset.scss
  * http://meyerweb.com/eric/tools/css/reset/
  * v2.0 | 20110126
  * License: none (public domain)
  */
+
 html,
 body,
 div,
@@ -137,6 +136,7 @@ table {
   border-spacing: 0;
 }
 
+// A little extra
 * {
   box-sizing: border-box;
   color: inherit;
@@ -149,40 +149,3 @@ a:active,
 a:focus {
   text-decoration: none;
 }
-
-.container {
-  max-width: 1440px;
-  width: 100%;
-  padding: 0 100px;
-  margin: 0 auto;
-}
-@media (max-width: 991px) {
-  .container {
-    padding: 0 32px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    padding: 0 16px;
-    text-align: center;
-  }
-}
-
-body {
-  margin: 0;
-  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f9f9f9;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, 'Courier·New', Consolas, monospace;
-}
-
-main {
-  background-color: #f9f8f7;
-  height: calc(100vh - 64px - 120px);
-}
-
-/*# sourceMappingURL=Layout.css.map */
