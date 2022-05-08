@@ -1,0 +1,19 @@
+header {
+  padding: 24px 0;
+  width: 100%;
+  background-color: rgb(26, 30, 43);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin-right: 24px;
+    color: #ffffff;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

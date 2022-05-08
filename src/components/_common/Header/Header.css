@@ -1,0 +1,19 @@
+header {
+  padding: 24px 0;
+  width: 100%;
+  background-color: #1a1e2b;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  margin-right: 24px;
+  color: #ffffff;
+}
+nav a:last-child {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=Header.css.map */
